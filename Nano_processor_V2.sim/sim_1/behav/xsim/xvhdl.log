@@ -1,4 +1,2 @@
 INFO: [VRFC 10-163] Analyzing VHDL file "D:/Vivado_designs/Nano_processor_V2/Nano_processor_V2.srcs/sources_1/new/ROM_v2.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity ROM_v2
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/Vivado_designs/Nano_processor_V2/Nano_processor_V2.srcs/sim_1/new/Sim_ROM_v2.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity Sim_ROM_v2

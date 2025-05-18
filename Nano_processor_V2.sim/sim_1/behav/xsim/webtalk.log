@@ -2,13 +2,13 @@
 # Webtalk v2018.1 (64-bit)
 # SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
 # IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
-# Start of session at: Sat May 17 19:50:37 2025
-# Process ID: 6716
+# Start of session at: Sun May 18 10:30:17 2025
+# Process ID: 23700
 # Current directory: D:/Vivado_designs/Nano_processor_V2/Nano_processor_V2.sim/sim_1/behav/xsim
-# Command line: wbtcv.exe -mode batch -source D:/Vivado_designs/Nano_processor_V2/Nano_processor_V2.sim/sim_1/behav/xsim/xsim.dir/Sim_ROM_v2_behav/webtalk/xsim_webtalk.tcl -notrace
+# Command line: wbtcv.exe -mode batch -source D:/Vivado_designs/Nano_processor_V2/Nano_processor_V2.sim/sim_1/behav/xsim/xsim.dir/sim_nano_processor_v2_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: D:/Vivado_designs/Nano_processor_V2/Nano_processor_V2.sim/sim_1/behav/xsim/webtalk.log
 # Journal file: D:/Vivado_designs/Nano_processor_V2/Nano_processor_V2.sim/sim_1/behav/xsim\webtalk.jou
 #-----------------------------------------------------------
-source D:/Vivado_designs/Nano_processor_V2/Nano_processor_V2.sim/sim_1/behav/xsim/xsim.dir/Sim_ROM_v2_behav/webtalk/xsim_webtalk.tcl -notrace
-webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 53.105 ; gain = 1.316
-INFO: [Common 17-206] Exiting Webtalk at Sat May 17 19:50:50 2025...
+source D:/Vivado_designs/Nano_processor_V2/Nano_processor_V2.sim/sim_1/behav/xsim/xsim.dir/sim_nano_processor_v2_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 53.258 ; gain = 0.980
+INFO: [Common 17-206] Exiting Webtalk at Sun May 18 10:30:23 2025...

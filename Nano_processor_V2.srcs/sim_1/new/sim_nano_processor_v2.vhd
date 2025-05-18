@@ -39,55 +39,62 @@ architecture Behavioral of sim_nano_processor_v2 is
 
     component Nano_processor_V2
         Port (
-            Slow_Clk     : in  STD_LOGIC;
-            Reset        : in  STD_LOGIC;
-            Seven_Seg    : out STD_LOGIC_VECTOR(6 downto 0);
-            Seven_Enable : out STD_LOGIC_VECTOR(3 downto 0);
-            Output       : out STD_LOGIC_VECTOR(3 downto 0);
-            Flag_Greater : out STD_LOGIC;
-            Flag_Lesser  : out STD_LOGIC
+            Clk           : in  STD_LOGIC;
+            Reset         : in  STD_LOGIC;
+            Output        : out STD_LOGIC_VECTOR(3 downto 0);
+            Flag_overflow : out STD_LOGIC;
+            Flag_Zero     : out STD_LOGIC;
+            Flag_C_out    : out STD_LOGIC;
+            Flag_Sign     : out STD_LOGIC;
+            Flag_Equal    : out STD_LOGIC;
+            Flag_Greater  : out STD_LOGIC;
+            Flag_Lesser   : out STD_LOGIC;
+            AnodeSelector : out STD_LOGIC_VECTOR(3 downto 0);
+            S_7Seg        : out STD_LOGIC_VECTOR(6 downto 0)
         );
     end component;
 
-    signal Slow_Clk     : STD_LOGIC := '0';
-    signal Reset        : STD_LOGIC := '0';
-    signal Seven_Seg    : STD_LOGIC_VECTOR(6 downto 0);
-    signal Seven_Enable : STD_LOGIC_VECTOR(3 downto 0);
-    signal Output       : STD_LOGIC_VECTOR(3 downto 0);
-    signal Flag_Greater : STD_LOGIC;
-    signal Flag_Lesser  : STD_LOGIC;
+    signal Clk           : STD_LOGIC := '0';
+    signal Reset         : STD_LOGIC := '0';
+    signal Output        : STD_LOGIC_VECTOR(3 downto 0);
+    signal Flag_overflow : STD_LOGIC;
+    signal Flag_Zero     : STD_LOGIC;
+    signal Flag_C_out    : STD_LOGIC;
+    signal Flag_Sign     : STD_LOGIC;
+    signal Flag_Equal    : STD_LOGIC;
+    signal Flag_Greater  : STD_LOGIC;
+    signal Flag_Lesser   : STD_LOGIC;
+    signal AnodeSelector : STD_LOGIC_VECTOR(3 downto 0);
+    signal S_7Seg        : STD_LOGIC_VECTOR(6 downto 0);
     
 begin
     UUT: Nano_processor_V2
-        port map (
-            Slow_Clk     => Slow_Clk,
-            Reset        => Reset,
-            Seven_Seg    => Seven_Seg,
-            Seven_Enable => Seven_Enable,
-            Output       => Output,
-            Flag_Greater => Flag_Greater,
-            Flag_Lesser  => Flag_Lesser
+        Port map (
+            Clk           => Clk,
+            Reset         => Reset,
+            Output        => Output,
+            Flag_overflow => Flag_overflow,
+            Flag_Zero     => Flag_Zero,
+            Flag_C_out    => Flag_C_out,
+            Flag_Sign     => Flag_Sign,
+            Flag_Equal    => Flag_Equal,
+            Flag_Greater  => Flag_Greater,
+            Flag_Lesser   => Flag_Lesser,
+            AnodeSelector => AnodeSelector,
+            S_7Seg        => S_7Seg
         );
 
     clk_process :process
     begin
-        Slow_Clk <= '1';
+        Clk <= '0';
         wait for 2 ns;
-        Slow_Clk <= '0';
+        Clk <= '1';
         wait for 2 ns;
     end process;
 
     process
         begin
             -- Initial Reset
-            Reset <= '1';
-            wait for 200 ns;
-            Reset <= '0';
-    
-            -- Let processor run for some time
-            wait for 300 ns;
-    
-            -- Re-assert reset if needed
             Reset <= '1';
             wait for 100 ns;
             Reset <= '0';

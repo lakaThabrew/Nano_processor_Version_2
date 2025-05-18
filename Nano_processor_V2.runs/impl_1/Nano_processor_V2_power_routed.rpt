@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
-| Date             : Sat May 17 18:39:47 2025
+| Date             : Sun May 18 11:54:19 2025
 | Host             : DESKTOP-NP5NV58 running 64-bit major release  (build 9200)
 | Command          : report_power -file Nano_processor_V2_power_routed.rpt -pb Nano_processor_V2_power_summary_routed.pb -rpx Nano_processor_V2_power_routed.rpx
 | Design           : Nano_processor_V2
@@ -53,12 +53,12 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |      159 |       --- |             --- |
-|   LUT as Logic |    <0.001 |       67 |     20800 |            0.32 |
+| Slice Logic    |    <0.001 |      171 |       --- |             --- |
+|   LUT as Logic |    <0.001 |       74 |     20800 |            0.36 |
 |   CARRY4       |    <0.001 |        8 |      8150 |            0.10 |
-|   Register     |    <0.001 |       50 |     41600 |            0.12 |
+|   Register     |    <0.001 |       54 |     41600 |            0.13 |
 |   Others       |     0.000 |        8 |       --- |             --- |
-| Signals        |    <0.001 |      144 |       --- |             --- |
+| Signals        |    <0.001 |      156 |       --- |             --- |
 | I/O            |    <0.001 |       24 |       106 |           22.64 |
 | Static Power   |     0.068 |          |           |                 |
 | Total          |     0.069 |          |           |                 |
@@ -144,7 +144,7 @@ Table of Contents
 |   Register_BANK_0 |     0.000 |
 |     Reg_1         |     0.000 |
 |     Reg_2         |     0.000 |
-|     Reg_4         |     0.000 |
+|     Reg_7         |     0.000 |
 |   Slow_Clk_0      |    <0.001 |
 |   pc_0            |     0.000 |
 |     D_FF_0        |     0.000 |

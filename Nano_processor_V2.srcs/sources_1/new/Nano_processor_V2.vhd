@@ -158,8 +158,7 @@ architecture Behavioral of Nano_processor_V2 is
     end component;
     
     signal Slow_clock_out, load_Selector, M, FLAG, ALU_C_out, Adder_C_out, Comparator : STD_LOGIC;
-    signal Register_Enable, Register_Selector_1, Register_Selector_2 : STD_LOGIC_VECTOR(2 downto 0);
-    signal Output_Selector : STD_LOGIC_VECTOR(2 downto 0);
+    signal Register_Enable, Register_Selector_1, Register_Selector_2, Output_Selector : STD_LOGIC_VECTOR(2 downto 0);
     signal pc_IN, Memory_Selector, Address_to_Jump, Adder_output : STD_LOGIC_VECTOR(3 downto 0);
     signal Register_Check_for_jump, Immerdiate_Value, ALU_output, Register_input, ALU_input_2 : STD_LOGIC_VECTOR(3 downto 0);
     signal Register0_out, Register1_out, Register2_out, Register3_out : STD_LOGIC_VECTOR(3 downto 0);
@@ -239,14 +238,6 @@ begin
                            Sel => Register_Selector_2,
                            Y  => ALU_input_2 );
     
---    ALU_0 : Add_Sub_unit
---        port map(   A => Register_Check_for_jump,
---                    B => ALU_input_2,
---                    M => M,
---                    C_out => ALU_C_out,
---                    S => ALU_output, 
---                    Zero => Flag_Zero,
---                    overflow => Flag_overflow );
     ALU_0 : ALU
         port map(   input_1 => Register_Check_for_jump ,
                     input_2 => ALU_input_2,
@@ -261,7 +252,7 @@ begin
                     ALU_greater => Flag_Greater,
                     ALU_lesser => Flag_Lesser);
     
-    Adder_3bit_0 : Adder_4bit
+    Adder_4bit_0 : Adder_4bit
         port map(   input => Memory_selector,
                     output => Adder_output,
                     C_out => Adder_C_out);
@@ -276,7 +267,7 @@ begin
         port map(   address => Register7_out,
                     data => S_7Seg );  
     
-    Flag_C_out <= ALU_C_out OR adder_C_out;
+    Flag_C_out <= ALU_C_out; -- OR Adder_C_out;
     Flag_Sign <= ALU_output(0);               
     output <= Register7_out;
     AnodeSelector <= "1110";
