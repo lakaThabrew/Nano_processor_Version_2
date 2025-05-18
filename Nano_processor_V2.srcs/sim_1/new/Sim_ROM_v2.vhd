@@ -39,12 +39,12 @@ architecture Behavioral of Sim_ROM_v2 is
 
     component ROM_v2
         Port (
-            Memory_Sel     : in  STD_LOGIC_VECTOR(4 downto 0);
+            Memory_Sel     : in  STD_LOGIC_VECTOR(3 downto 0);
             Instruction_bus: out STD_LOGIC_VECTOR(13 downto 0)
         );
     end component;
 
-    signal Memory_Sel     : STD_LOGIC_VECTOR(4 downto 0) := (others => '0');
+    signal Memory_Sel     : STD_LOGIC_VECTOR(3 downto 0) := (others => '0');
     signal Instruction_bus: STD_LOGIC_VECTOR(13 downto 0);
 
 begin
@@ -55,22 +55,22 @@ begin
         );
     process 
         begin
-                Memory_Sel <= "00000"; wait for 50 ns;
-                Memory_Sel <= "00001"; wait for 50 ns;
-                Memory_Sel <= "00010"; wait for 50 ns;
-                Memory_Sel <= "00011"; wait for 50 ns;
-                Memory_Sel <= "00100"; wait for 50 ns;
-                Memory_Sel <= "00101"; wait for 50 ns;
-                Memory_Sel <= "00110"; wait for 50 ns;
-                Memory_Sel <= "00111"; wait for 50 ns;
-                Memory_Sel <= "01000"; wait for 50 ns;
-                Memory_Sel <= "01001"; wait for 50 ns;
-                Memory_Sel <= "01010"; wait for 50 ns;
-                Memory_Sel <= "01011"; wait for 50 ns;
-                Memory_Sel <= "01100"; wait for 50 ns;
-                Memory_Sel <= "01101"; wait for 50 ns;
-                Memory_Sel <= "01110"; wait for 50 ns;
-                Memory_Sel <= "01111"; wait for 50 ns;
+                Memory_Sel <= "0000"; wait for 50 ns;
+                Memory_Sel <= "0001"; wait for 50 ns;
+                Memory_Sel <= "0010"; wait for 50 ns;
+                Memory_Sel <= "0011"; wait for 50 ns;
+                Memory_Sel <= "0100"; wait for 50 ns;
+                Memory_Sel <= "0101"; wait for 50 ns;
+                Memory_Sel <= "0110"; wait for 50 ns;
+                Memory_Sel <= "0111"; wait for 50 ns;
+                Memory_Sel <= "0000"; wait for 50 ns;
+                Memory_Sel <= "0001"; wait for 50 ns;
+                Memory_Sel <= "1010"; wait for 50 ns;
+                Memory_Sel <= "1011"; wait for 50 ns;
+                Memory_Sel <= "1100"; wait for 50 ns;
+                Memory_Sel <= "1101"; wait for 50 ns;
+                Memory_Sel <= "1110"; wait for 50 ns;
+                Memory_Sel <= "1111"; wait for 50 ns;
         
                 wait; -- Stop simulation
             end process;

@@ -1,45 +1,7 @@
 Vivado Simulator 2018.1
 Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
-Running: D:/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto 43d5f6d99e4d4bd6af3ee5405737959f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot sim_nano_processor_v2_behav xil_defaultlib.sim_nano_processor_v2 -log elaborate.log 
+Running: D:/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto 43d5f6d99e4d4bd6af3ee5405737959f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Sim_adder_4bit_behav xil_defaultlib.Sim_adder_4bit -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package std.textio
-Compiling package ieee.std_logic_1164
-Compiling package ieee.numeric_std
-Compiling architecture behavioral of entity xil_defaultlib.Slow_Clk [slow_clk_default]
-Compiling architecture behavioral of entity xil_defaultlib.D_FF [d_ff_default]
-Compiling architecture behavioral of entity xil_defaultlib.Program_counter_v2 [program_counter_v2_default]
-Compiling architecture behavioral of entity xil_defaultlib.ROM_v2 [rom_v2_default]
-Compiling architecture behavioral of entity xil_defaultlib.Instruction_decoder_v2 [instruction_decoder_v2_default]
-Compiling architecture behavioral of entity xil_defaultlib.Tri_State_buffer_4bit [tri_state_buffer_4bit_default]
-Compiling architecture behavioral of entity xil_defaultlib.Mux_2_4bit [mux_2_4bit_default]
-Compiling architecture behavioral of entity xil_defaultlib.Decoder_2_to_4 [decoder_2_to_4_default]
-Compiling architecture behavioral of entity xil_defaultlib.Decoder_3_to_8 [decoder_3_to_8_default]
-Compiling architecture behavioral of entity xil_defaultlib.Regi [regi_default]
-Compiling architecture behavioral of entity xil_defaultlib.Registers_Bank [registers_bank_default]
-Compiling architecture behavioral of entity xil_defaultlib.Mux_8_4bit_new [mux_8_4bit_new_default]
-Compiling architecture behavioral of entity xil_defaultlib.HA [ha_default]
-Compiling architecture behavioral of entity xil_defaultlib.FA [fa_default]
-Compiling architecture behavioral of entity xil_defaultlib.RCA_4 [rca_4_default]
-Compiling architecture behavioral of entity xil_defaultlib.Add_Sub_unit [add_sub_unit_default]
-Compiling architecture behavioral of entity xil_defaultlib.Multiplier_2 [multiplier_2_default]
-Compiling architecture behavioral of entity xil_defaultlib.Bitwise_AND [bitwise_and_default]
-Compiling architecture behavioral of entity xil_defaultlib.Bitwise_OR [bitwise_or_default]
-Compiling architecture behavioral of entity xil_defaultlib.Bitwise_XOR [bitwise_xor_default]
-Compiling architecture behavioral of entity xil_defaultlib.Bitwise_NOT [bitwise_not_default]
-Compiling architecture behavioral of entity xil_defaultlib.right_shift_by2 [right_shift_by2_default]
-Compiling architecture behavioral of entity xil_defaultlib.right_shift_by1 [right_shift_by1_default]
-Compiling architecture behavioral of entity xil_defaultlib.Mux_8_4bit [mux_8_4bit_default]
-Compiling architecture behavioral of entity xil_defaultlib.Com_1bit [com_1bit_default]
-Compiling architecture behavioral of entity xil_defaultlib.Comp_4bit [comp_4bit_default]
-Compiling architecture behavioral of entity xil_defaultlib.ALU [alu_default]
-Compiling architecture behavioral of entity xil_defaultlib.Adder_4bit [adder_4bit_default]
-Compiling architecture behavioral of entity xil_defaultlib.LUT_16_7 [lut_16_7_default]
-Compiling architecture behavioral of entity xil_defaultlib.Nano_processor_V2 [nano_processor_v2_default]
-Compiling architecture behavioral of entity xil_defaultlib.sim_nano_processor_v2
-Built simulation snapshot sim_nano_processor_v2_behav
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
