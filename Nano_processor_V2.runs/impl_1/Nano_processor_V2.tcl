@@ -67,6 +67,7 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
+  set_param synth.incrementalSynthesisCache C:/Users/Lenovo/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-3116-DESKTOP-NP5NV58/incrSyn
   create_project -in_memory -part xc7a35tcpg236-1
   set_property board_part digilentinc.com:basys3:part0:1.2 [current_project]
   set_property design_mode GateLvl [current_fileset]

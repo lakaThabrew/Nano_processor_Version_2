@@ -2,12 +2,12 @@
 # Webtalk v2018.1 (64-bit)
 # SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
 # IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
-# Start of session at: Sun May 18 18:51:22 2025
-# Process ID: 15420
+# Start of session at: Sun May 18 22:50:54 2025
+# Process ID: 27416
 # Current directory: D:/Vivado_designs/Nano_processor_V2/Nano_processor_V2.sim/sim_1/behav/xsim
-# Command line: wbtcv.exe -mode batch -source D:/Vivado_designs/Nano_processor_V2/Nano_processor_V2.sim/sim_1/behav/xsim/xsim.dir/Sim_ALU_behav/webtalk/xsim_webtalk.tcl -notrace
+# Command line: wbtcv.exe -mode batch -source D:/Vivado_designs/Nano_processor_V2/Nano_processor_V2.sim/sim_1/behav/xsim/xsim.dir/Sim_adder_4bit_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: D:/Vivado_designs/Nano_processor_V2/Nano_processor_V2.sim/sim_1/behav/xsim/webtalk.log
 # Journal file: D:/Vivado_designs/Nano_processor_V2/Nano_processor_V2.sim/sim_1/behav/xsim\webtalk.jou
 #-----------------------------------------------------------
-source D:/Vivado_designs/Nano_processor_V2/Nano_processor_V2.sim/sim_1/behav/xsim/xsim.dir/Sim_ALU_behav/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-206] Exiting Webtalk at Sun May 18 18:51:23 2025...
+source D:/Vivado_designs/Nano_processor_V2/Nano_processor_V2.sim/sim_1/behav/xsim/xsim.dir/Sim_adder_4bit_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun May 18 22:50:54 2025...
