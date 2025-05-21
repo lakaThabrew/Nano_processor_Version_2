@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
-| Date         : Sun May 18 21:52:05 2025
+| Date         : Wed May 21 11:07:16 2025
 | Host         : DESKTOP-NP5NV58 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file Nano_processor_V2_utilization_synth.rpt -pb Nano_processor_V2_utilization_synth.pb
 | Design       : Nano_processor_V2
@@ -149,17 +149,17 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| LUT4     |   40 |                 LUT |
+| LUT4     |   42 |                 LUT |
 | FDRE     |   38 |        Flop & Latch |
 | LUT2     |   29 |                 LUT |
 | OBUF     |   22 |                  IO |
-| LUT6     |   14 |                 LUT |
+| LUT6     |   15 |                 LUT |
 | LUT3     |   12 |                 LUT |
 | FDCE     |   12 |        Flop & Latch |
 | CARRY4   |    8 |          CarryLogic |
-| LUT5     |    5 |                 LUT |
-| LUT1     |    2 |                 LUT |
+| LUT5     |    3 |                 LUT |
 | IBUF     |    2 |                  IO |
+| LUT1     |    1 |                 LUT |
 | BUFG     |    1 |               Clock |
 +----------+------+---------------------+
 
