@@ -1,6 +1,7 @@
 # Nano Processor Version-2
 
-Nano Processor Version-2 is a 4-bit custom-designed processor written in VHDL. It is the second version of a minimalistic processor architecture designed for educational and experimental use on FPGA boards.
+Nano Processor Version-2 is a 4-bit custom-designed processor written in VHDL. It is the second version of a minimalistic processor architecture designed for educational and experimental use on FPGA boards. 
+This is an extension of the previous version 1 of the nano processor. **https://github.com/lakaThabrew/Nano_processor_Version_1**
 
 ## 🧠 Features
 
