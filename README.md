@@ -8,14 +8,17 @@ This is an extension of the previous version 1 of the nano processor. **https://
 - **4-bit Data Width**  
   Supports 4-bit wide instructions, operations, and data handling.
 
+- **Programme Counter**  
+  Supports 16 instruction sets.
+    
 - **Instruction Set**  
-  Custom instruction set implemented via ROM and instruction decoder.
+  Custom instruction set implemented via ROM and 14-bit instruction decoder.
 
 - **General-Purpose Registers**  
   8-register bank with enable logic and individual output lines.
 
 - **ALU (Arithmetic Logic Unit)**  
-  Performs addition, subtraction, and comparison operations with:
+  Performs addition, subtraction, and comparison operations, bitwise and, or, not and right shifts till 2 positions with:
   - Zero Flag
   - Overflow Flag
   - Carry-Out Flag
